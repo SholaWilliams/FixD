@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Page</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/css/chat.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div id="chat-messages" class="messages"></div>
+      <div class="input-container">
+        <textarea id="message-input" placeholder="Type a message..."></textarea>
+        <button id="send-button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+    <!-- <script src="{{ url_for('static', filename='assets/js/handlers.js') }}"></script> -->
+    <script src="{{ url_for('static', filename='assets/js/chat.js') }}"></script>
+  </body>
+</html>
